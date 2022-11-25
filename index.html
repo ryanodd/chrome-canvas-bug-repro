@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page Title</title>
+  </head>
+<body>
+  <p>Source canvas (updated every frame by a worker thread)</p>
+  <canvas id="source-canvas">
+  </canvas>
+  <br />
+  <p>Destination canvas (every frame, source canvas is copied to this)</p>
+  <canvas id="destination-canvas">
+  </canvas>
+  <br />
+  <p>Within about 2 minutes, we are seeing the destination canvas freeze. We suspect this is an issue in Chrome 106+ because it doesn't occur in Chrome 105 (or Firefox).</p>
+
+  <script src="index.js">
+  </script>
+</body>
+</html>
